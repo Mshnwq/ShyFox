@@ -9,3 +9,50 @@
 @import url("ShyFox/shy-compact.css");
 @import url("ShyFox/shy-icons.css");
 @import url("ShyFox/shy-floating-search.css");
+
+/*
+
+https://github.com/rkcpn/simple-transparent-firefox/blob/main/userChrome.css
+
+:root {	
+	--bg: #00000066;
+}
+
+
+tab.tabbrowser-tab[selected="true"] stack.tab-stack vbox.tab-background {
+	background: #FFFFFF28 !important;
+}
+
+toolbar {
+	background: transparent !important;
+}
+
+#main-window {
+	background: var(--bg) !important;
+}
+
+#nav-bar {
+	background: transparent  !important;
+}
+#navigator-toolbox {
+	background: transparent !important;
+}
+
+hbox#urlbar[open="true"] hbox#urlbar-background {
+	background: #000000E0 !important;
+}
+
+#urlbar-background {
+	background: transparent !important;
+}
+
+https://github.com/QNetITQ/WaveFox/pull/241
+
+
+shyfox:
+  shy-global: 
+     - / set background color / also background-color transparent !important
+     - remove #tabrowser-tabbox tabrowser-tabpanels::after
+     - DEVTOOL .browserSidebarContainer change to transparent
+
+*/

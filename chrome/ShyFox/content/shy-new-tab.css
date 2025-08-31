@@ -115,12 +115,6 @@ Styles for new tab
     background-attachment: fixed !important;
   }
   
-  /* dark wallpaper */
-  :root[lwt-newtab-brighttext] body {background-image: url("../../wallpaper.png") !important;}
-  
-  /* light wallpaper */                                      /* `wallpaper.png` will be used when `-light` one does not exist */
-  :root:not([lwt-newtab-brighttext]) body {background-image: url("../../wallpaper-light.png"), url("../../wallpaper.png") !important;}
-  
   /* central box */
   main{
     margin-top: 15% !important;
@@ -136,37 +130,6 @@ Styles for new tab
   .home-section .section .selector{
     background-color: var(--tr-col) !important;
     &:hover{background-color: var(--tr-hov-col) !important;}
-  }
-  
-  /* weather */
-  .weatherInfoLink:hover, .weatherButtonContextMenuWrapper:hover {
-    background-color: var(--tr-hov-col) !important;
-  }
-  
-  .weatherCard:not(:hover) .weatherButtonContextMenuWrapper{opacity: 0}
-  .weatherInfoLink {border-radius: 0px !important;}
-  .weatherButtonContextMenuWrapper::after{display: none !important;}
-  
-  /* autograph */
-  .activity-stream::before,
-  .activity-stream::after
-  {
-    font-family: monospace;
-    color: white;
-    opacity: 0.042;
-    position: fixed;
-    z-index: 99999;
-    bottom: 10px;
-  }
-  
-  .activity-stream::before{
-    content: "ShyFox by N2ezr";
-    left: 10px;
-  }
-  
-  .activity-stream::after{
-    content: "42 🤙";
-    right: 10px;
   }
   
 }
